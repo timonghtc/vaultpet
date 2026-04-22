@@ -30,10 +30,10 @@ jobs:
           fi
       - run: npm run build
         env:
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-          VITE_ADMIN_PASSWORD: ${{ secrets.VITE_ADMIN_PASSWORD }}
-          VITE_ADMIN_EMAIL: ${{ secrets.VITE_ADMIN_EMAIL }}
+          VITE_SUPABASE_URL: ${{ https://peagvjqnmjllqerqcuzs.supabase.co }}
+          VITE_SUPABASE_ANON_KEY: ${{ sb_publishable_igI-rBKs2IBwyCgfc7CpJg_W2lw_KZX }}
+          VITE_ADMIN_PASSWORD: ${{ Boss }}
+          VITE_ADMIN_EMAIL: ${{ bombini@gmail.com }}
       - run: echo petvault.us > dist/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
