@@ -8,6 +8,9 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   logLevel: 'error', // Suppress warnings, only show errors
   base: './',
+  optimizeDeps: {
+    entries: ['index.html']
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

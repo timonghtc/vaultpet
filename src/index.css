@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 185 40% 97%;
+    --foreground: 200 40% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 200 40% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 40% 12%;
+    --primary: 183 85% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 185 30% 92%;
+    --secondary-foreground: 200 30% 20%;
+    --muted: 185 25% 91%;
+    --muted-foreground: 200 15% 48%;
+    --accent: 322 85% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 185 25% 86%;
+    --input: 185 25% 86%;
+    --ring: 183 85% 38%;
+    --chart-1: 183 85% 38%;
+    --chart-2: 322 85% 52%;
+    --chart-3: 25 95% 58%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 200 80% 50%;
+    --radius: 1rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 200 40% 12%;
+    --sidebar-primary: 183 85% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 185 30% 92%;
+    --sidebar-accent-foreground: 200 30% 20%;
+    --sidebar-border: 185 25% 86%;
+    --sidebar-ring: 183 85% 38%;
+    --font-heading: 'Fredoka One', cursive;
+    --font-body: 'Nunito', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: var(--font-body);
+    overscroll-behavior-y: none;
+  }
+}
+
+@media (max-width: 768px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
